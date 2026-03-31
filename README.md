@@ -8,14 +8,14 @@ A fully  functional embedded systems project that simulates a smart home control
 
 - [Features](#features)
 - [Hardware Components](#hardware-components)
-- [Pin Assignment](#-pin-assignment)
-- [Course Concepts Demonstrated](#-course-concepts-demonstrated)
-- [State Machine](#-state-machine)
-- [Wiring Diagram](#-wiring-diagram)
-- [Hardware Photos](#-hardware-photos)
-- [Getting Started](#-getting-started)
-- [Serial Monitor Output Example](#-serial-monitor-output-example)
-- [Additional Information](#-additional-information)
+- [Pin Connections](#pin-connections)
+- [Course Concepts Demonstrated](#course-concepts-demonstrated)
+- [State Machine](#state-machine)
+- [Wiring Diagram](#wiring-diagram)
+- [Hardware Photos](#hardware-photos)
+- [Getting Started](#getting-started)
+- [Serial Monitor Output Example](#serial-monitor-output-example)
+- [Additional Information](#additional-information)
 
 ---
 
@@ -34,9 +34,102 @@ A fully  functional embedded systems project that simulates a smart home control
 ---
 
 ## Hardware Components
-- 
+| Component               | Purpose                          |
+|-------------------------|----------------------------------|
+| Elegoo UNO R3           | Main microcontroller             |
+| 830-point breadboard    | Prototyping platform             |
+| DHT11                   | Reads temp and humidity          |
+| Photoresistor (LDR)     | Ambient light detection          |
+| DC Fan Motor            | PWM-controlled fan               |
+| Active buzzer           | Alarm output                     |
+| x3 RGB LED              | Visual state indicator           |
+| LCD1602 display         | Live sensor readings             |
+| PN2222 transistor       | PWM-controlled fan               |
+| 1N4007 flyback diode    | Motor protection                 |
+| 2x Push buttons         | Mode and speed control           |
+| 10kΩ resistor           | Ambient light detection          |
+| 1kΩ resistors           | Transistor base resistor         |
+| 3x 220Ω resistors       | LED current limiting             |
+
+---
+
+## PIN Connections
+| Arduino PIN             | Component                          |
+|-------------------------|------------------------------------|
+| PIN 2                   |  Mode Button (INPUT_PULLUP)        |
+| PIN 3                   |  Speed Button (INPUT_PULLUP)       |
+| PIN 6                   |  Active buzzer                     |
+| PIN 7                   |  RGB LED Red                       |
+| PIN 8                   |  RGB LED Green                     |
+| PIN 10                  |  RGB LED Blue                      |
+| PIN 11                  |  Fan Motor PWM                     |
+| PIN 13                  |  DHT11 data                        |
+| PIN A0                  |  Photoresistor ADC input           |
+| PIN A1                  |  LCD D7                            |
+| PIN A2                  |  LCD RS                            |
+| PIN A3                  |  LCD EN                            |
+| PIN A4                  |  LCD D4                            |
+| PIN A5                  |  LCD D5                            |
+| PIN 12                  |  LCD D6                            |
+
+---
+
+## Course Concepts Demonstrated
+- ADC: Photoresistor on A0, analogRead() returns 0–1023.
+- PWM: Fan speed and LED brightness via analogWrite().
+- GPIO: Buttons (input), LEDs, Buzzer (output).
+- Timers: delay(2000), periodic DHT11 sampling.
+- UART: Serial.begin(9600), structured data to PC terminal.
+- State Machine: AUTO | MANUAL | SLEEP | ALARM with modeState.
+- Digital sensor: DHT11 single-wire protocol.
+- Analog sensor: LDR voltage divider to ADC conversion.
+- Hardware interfacing: PN2222 transistor driving DC motor from GPIO.
+- Countermeasure: Fan OFF and  alarm at 35°C safety threshold.
+- Harvard architecture: ATmega328P separates Flash (program) and SRAM (data), same principle as PIC18F4520.
+
+---
+
+## State Machine
+    Power ON → AUTO
+    Button 1 press → AUTO → MANUAL → SLEEP → AUTO (cycles)
+
+    AUTO:   Fan responds to temperature automatically
+    MANUAL: Button 2 cycles fan OFF → LOW → MEDIUM → FULL
+    SLEEP:  Fan off, blue LED brightness adapts to ambient light
+    ALARM:  Triggered when temp >= 35°C — fan off, buzzer ON, red LED
+
+---
+
+## Wiring Diagram
 
 
+---
+
+## Hardware Photos
+
+---
+
+## Getting Started
+
+---
+
+## Serial Monitor Output Example
+    Smart Home Appliance Control System
+    EEL4730 - FIU
+    Temperature: 23C | Humidity: 55%
+    Light Detection. Enviroment Lighting is Light
+    Fan Motor: LOW speed
+    MODE: MANUAL
+    Manual Fan: MEDIUM
+    MODE: SLEEP
+    MODE: AUTO
+    Fan Motor: FULL speed
+    Fan Motor: OFF --- ALARM!! ---
+    BUZZER: ON
+
+---
+
+## Additional Information
 
 Florida International University
 
