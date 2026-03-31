@@ -6,8 +6,8 @@ A fully  functional embedded systems project that simulates a smart home control
 
 ## 📚 Table of Contents
 
-- [Features](#-features)
-- [Hardware Components](#-hardware-components)
+- [Features](#features)
+- [Hardware Components](#hardware-components)
 - [Pin Assignment](#-pin-assignment)
 - [Course Concepts Demonstrated](#-course-concepts-demonstrated)
 - [State Machine](#-state-machine)
