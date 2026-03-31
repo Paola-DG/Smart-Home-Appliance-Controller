@@ -1,4 +1,4 @@
-## Smart Home Appliance Controller ##
+# Smart Home Appliance Controller #
 
 A fully  functional embedded systems project that simulates a smart home controller using an Arduino UNO R3 (ATmega328P). The system automatically controls a DC fan based on real-time temperature and humidity readings, with manual override capability, a sleep mode with adaptive lighting, and a safety alarm system.
 
