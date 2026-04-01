@@ -20,6 +20,7 @@ The hardware-software integration is achieved through direct peripheral register
 - [State Machine](#state-machine)
 - [Wiring Diagram](#wiring-diagram)
 - [Hardware Photos](#hardware-photos)
+- [Video Demo AND Explanation of Wiring](#video-demo-and-explanation-of-wiring)
 - [Getting Started](#getting-started)
 - [Serial Monitor Output Example](#serial-monitor-output-example)
 - [Additional Information](#additional-information)
@@ -113,6 +114,11 @@ The hardware-software integration is achieved through direct peripheral register
 ---
 
 ## Hardware Photos
+
+---
+
+## Video Demo AND Explanation of Wiring
+[![Smart Home Appliance Control System Demo](https://img.shields.io/badge/YouTube-Watch%20Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/NAKaDOO0xM4)
 
 ---
 
