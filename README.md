@@ -1,4 +1,7 @@
-# Smart Home Appliance Controller #
+# Smart Home Appliance Controller
+![Arduino](https://img.shields.io/badge/Arduino-UNO%20R3-00979D?style=flat&logo=arduino)
+![Language](https://img.shields.io/badge/Language-C%2B%2B-blue?style=flat&logo=cplusplus)
+![Course](https://img.shields.io/badge/FIU-EEL4730-blue?style=flat)
 
 A fully  functional embedded systems project that simulates a smart home controller using an Arduino UNO R3 (ATmega328P). The system automatically controls a DC fan based on real-time temperature and humidity readings, with manual override capability, a sleep mode with adaptive lighting, and a safety alarm system.
 
@@ -25,9 +28,9 @@ A fully  functional embedded systems project that simulates a smart home control
 - SLEEP mode: Fan off, blue LED dims/brightens based on ambient light (smart nightlight).
 - ALARM condition: Fan off, buzzer sounds, red LED flashes when temperature exceeds 35°C.
   
-- LCD diplay:  Real-time temperature, humidity, and system state.
+- LCD display:  Real-time temperature, humidity, and system state.
 - RGB LED indicators: Green (AUTO) | Blue (MANUAL) | Dim Blue (SLEEP) | Red (ALARM)
-- Light detection: Photoresistor classifies environment as Dark / Dim / Light / Bright / Very Bright. It will show at Serial Moonitor/Console.
+- Light detection: Photoresistor classifies environment as Dark / Dim / Light / Bright / Very Bright. It will show at Serial Monitor/Console.
   
 - Serial logging: Structured data output to PC at 9600 baud
 
@@ -44,7 +47,7 @@ A fully  functional embedded systems project that simulates a smart home control
 | Active buzzer           | Alarm output                     |
 | x3 RGB LED              | Visual state indicator           |
 | LCD1602 display         | Live sensor readings             |
-| PN2222 transistor       | PWM-controlled fan               |
+| PN2222 transistor       | Fan motor driver                 |
 | 1N4007 flyback diode    | Motor protection                 |
 | 2x Push buttons         | Mode and speed control           |
 | 10kΩ resistor           | Ambient light detection          |
