@@ -118,7 +118,7 @@ The hardware-software integration is achieved through direct peripheral register
 ---
 
 ## Video Demo AND Explanation of Wiring
-[![Smart Home Appliance Control System Demo](https://img.shields.io/badge/YouTube-Watch%20Demo-red?style=for-the-badge&logo=youtube)](https://youtu.be/NAKaDOO0xM4)
+[![Smart Home Appliance Control System Demo](https://img.shields.io/badge/YouTube-Watch%20Video-red?style=for-the-badge&logo=youtube)](https://youtu.be/NAKaDOO0xM4)
 
 ---
 
