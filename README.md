@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/Language-C%2B%2B-blue?style=flat&logo=cplusplus)
 ![Course](https://img.shields.io/badge/FIU-EEL4730-blue?style=flat)
 
-Modern homes increasingly rely on embedded systems to automate appliances and improve energy efficiency. This project presents a fully functional smart home appliance controller built on an Arduino UNO R3 (ATmega328P — Harvard architecture, 8-bit RISC microcontroller), designed to automatically manage a DC fan based on real-time environmental conditions.
+Modern homes rely on embedded systems to automate appliances and improve energy efficiency. This project presents a fully functional smart home appliance controller built on an Arduino UNO R3 (ATmega328P — Harvard architecture, 8-bit RISC microcontroller), designed to automatically manage a DC fan based on real-time environmental conditions.
 
 The system reads temperature and humidity from a DHT11 digital sensor and ambient light levels from a photoresistor (ADC), then responds by controlling a DC fan motor through PWM, visual RGB LED state indicators, an LCD1602 display, and a safety buzzer alarm — all communicating status to a PC via UART serial output.
 
