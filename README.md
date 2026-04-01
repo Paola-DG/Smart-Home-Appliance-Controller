@@ -115,6 +115,26 @@ The hardware-software integration is achieved through direct peripheral register
 
 ## Hardware Photos
 
+### System startup
+![System Startup](Images/Starting.jpg)
+
+### AUTO mode — fan responding to temperature automatically
+![AUTO Mode](Images/Auto-Mode.jpg)
+
+### MANUAL mode — user controls fan speed via button
+![MANUAL Mode](Images/Manual-Mode-Fan-OFF.jpg)
+
+### MANUAL mode — fan at medium speed
+![MANUAL Mode Medium](Images/Manual-Mode-Fan-Medium.jpg)
+
+### SLEEP mode — adaptive blue LED nightlight
+![SLEEP Mode](Images/Sleep-Mode.jpg)
+
+### Elegoo UNO R3 — ATmega328P wiring detail
+![MCU Wiring](Images/MCU-Wiring-OFF.jpg)
+
+### Full breadboard layout
+![Breadboard Wiring](Images/Breadboar-Wiring-OFF.jpg)
 ---
 
 ## Video Demo AND Explanation of Wiring
