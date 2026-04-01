@@ -110,6 +110,20 @@ A fully  functional embedded systems project that simulates a smart home control
 ---
 
 ## Getting Started
+### Prerequisites
+  -  Arduino IDE
+  -  DHT11 library: install via Sketch → Include Library → Manage Libraries → search DHT11 (by Dhruba Saha)
+  -  LiquidCrystal library: built into Arduino IDE
+
+### Upload
+  1) Clone this repository;
+
+    git clone https://github.com/Paola-DG/smart-home-appliance-controller.git
+  2) Open SmartHomeAppliance.ino file in Arduino IDE.
+  3) Select board: Arduino UNO.
+  4) Select correct COM port.
+  5) Click Upload.
+  6) Open Serial Monitor at 9600 baud.
 
 ---
 
